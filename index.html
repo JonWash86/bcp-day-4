@@ -5,17 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>App Time</title>
+    <style>
+   
+    </style>
 </head>
 <body>
     <h1>Just an App</h1>
+    <label>
+        Name:
+    <input id="name">
+    </label>
 
+    <main>
+        <p>  
+            <label>
+                <input name="power" type="radio"> Square
+            </label>
+            <label>
+                <input name="power" type="radio"> Cube
+            </label>
+            
+            <button onclick="showName()">Click here!</button>
+
+            </p>
+    </main>
     <script>
-        //this is a comment to illustrate branch.
+            function showName(){
+                var input = document.getElementById('name');
+                var name = input.value;
+                console.log(name);
+            }
 
+        function count() {
         for(var i = 0; i < 10; i++) {
             console.log(i + 1);
         }
 
+
+        }
+        
+    
     </script>
 </body>
 </html>
